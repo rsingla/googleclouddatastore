@@ -18,7 +18,7 @@ public class VisitorController {
   @RequestMapping(value = "/visitor", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
   @ResponseBody
   public Entity insertVisitor(@RequestBody Visitors visitors) {
-    return visitorDSDao.createUser(visitors);
+    return visitorDSDao.createVisitor(visitors);
   }
 
 }
